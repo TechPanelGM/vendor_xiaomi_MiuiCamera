@@ -6,9 +6,9 @@
 
 # Permissions
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/camera/configs/permissions/default-permissions-miuicamera.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/default-permissions/default-permissions-miuicamera.xml \
-    vendor/xiaomi/camera/configs/permissions/miuicamera-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/miuicamera-hiddenapi-package-whitelist.xml \
-    vendor/xiaomi/camera/configs/permissions/privapp-permissions-miuicamera.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-miuicamera.xml
+    vendor/xiaomi/miuicamera-sm8250/configs/permissions/default-permissions-miuicamera.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/default-permissions/default-permissions-miuicamera.xml \
+    vendor/xiaomi/miuicamera-sm8250/configs/permissions/miuicamera-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/miuicamera-hiddenapi-package-whitelist.xml \
+    vendor/xiaomi/miuicamera-sm8250/configs/permissions/privapp-permissions-miuicamera.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-miuicamera.xml
 
 # Properties
 PRODUCT_SYSTEM_PROPERTIES += \
@@ -23,6 +23,6 @@ PRODUCT_PACKAGES += \
 
 # Sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += \
-    vendor/xiaomi/camera/sepolicy/vendor
+    vendor/xiaomi/miuicamera-sm8250/sepolicy/vendor
 
-$(call inherit-product, vendor/xiaomi/camera/camera-vendor.mk)
+$(call inherit-product, vendor/xiaomi/miuicamera-sm8250/camera-vendor.mk)
